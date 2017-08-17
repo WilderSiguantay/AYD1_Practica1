@@ -47,14 +47,7 @@ namespace Practica1
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if(txtNombre != null  || txtApellido != null || txtIngresos != null || cmbEdad != null || cmbSexo != null)
-            {
-
-                MessageBox.Show("Campos Vacíos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-            }
-            else
-            {
+            
                 String nombre, apellido, edad, sexo, ingresos;
                 nombre = txtNombre.Text;
                 apellido = txtApellido.Text;
@@ -68,8 +61,41 @@ namespace Practica1
                 {
                     sexo = "1";
                 }
-                
+
+            if(txtApellido.Text == "" || txtIngresos.Text == "" || txtNombre.Text == "" || cmbSexo.Text == "" || cmbEdad.Text == "")
+            {
+                MessageBox.Show("No deje campos vacíos", "Precaución", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+            else
+            {
+          
+                if (conn.Crear("Persona", "Nombre, Apellido, Edad, Sexo, Ingresos", "'" + nombre + "', '" + apellido + "', " + edad + ", " + sexo + ", " + ingresos))
+                {
+                    MessageBox.Show("Valores guardados exitosamente.");
+                    if (Convert.ToInt32(edad) >= 18 && Convert.ToInt32(ingresos) >= 7000)
+                    {
+                        MessageBox.Show(nombre + " " + apellido + " de Sexo " + cmbSexo.Text + " de edad " + edad + " SI cumple para obtener el credito", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        txtApellido.Text = "";
+                        txtNombre.Text = "";
+                        txtIngresos.Text = "";
+                        cmbEdad.Text = "";
+                        cmbSexo.Text = "";
+                    }
+                    else
+                    {
+                        MessageBox.Show(nombre + " " + apellido + " de Sexo " + cmbSexo.Text + " de edad " + edad + " NO cumple para obtener el credito", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Error al guardar datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+
+            }
+
+
 
 
         }
