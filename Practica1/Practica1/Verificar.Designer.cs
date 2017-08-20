@@ -1,6 +1,6 @@
 ﻿namespace Practica1
 {
-    partial class Form1
+    partial class Verificar
     {
         /// <summary>
         /// Variable del diseñador necesaria.

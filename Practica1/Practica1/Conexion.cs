@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace Practica1
 {
-    class Conexion
+    public class Conexion
     {
         SqlConnection conexion = new SqlConnection();
 
@@ -21,7 +21,7 @@ namespace Practica1
         }
 
 
-        private bool ConectarServer()
+        public bool ConectarServer()
         {
             bool respuesta = false;
             //JARVIS\SQLEXPRESS

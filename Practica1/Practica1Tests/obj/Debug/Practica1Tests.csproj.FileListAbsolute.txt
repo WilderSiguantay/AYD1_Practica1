@@ -1,0 +1,9 @@
+C:\Users\gonza\Documents\GitHub\AYD1_Practica1\Practica1\Practica1Tests\bin\Debug\Practica1Tests.dll
+C:\Users\gonza\Documents\GitHub\AYD1_Practica1\Practica1\Practica1Tests\bin\Debug\Practica1Tests.pdb
+C:\Users\gonza\Documents\GitHub\AYD1_Practica1\Practica1\Practica1Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\gonza\Documents\GitHub\AYD1_Practica1\Practica1\Practica1Tests\bin\Debug\Practica1.exe
+C:\Users\gonza\Documents\GitHub\AYD1_Practica1\Practica1\Practica1Tests\bin\Debug\Practica1.pdb
+C:\Users\gonza\Documents\GitHub\AYD1_Practica1\Practica1\Practica1Tests\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\gonza\Documents\GitHub\AYD1_Practica1\Practica1\Practica1Tests\obj\Debug\Practica1Tests.csprojResolveAssemblyReference.cache
+C:\Users\gonza\Documents\GitHub\AYD1_Practica1\Practica1\Practica1Tests\obj\Debug\Practica1Tests.dll
+C:\Users\gonza\Documents\GitHub\AYD1_Practica1\Practica1\Practica1Tests\obj\Debug\Practica1Tests.pdb
